@@ -11,7 +11,7 @@ MODULE_LICENSE("Dual BSD/GPL");
 
 static uint parameter = 1;
 
-// 0444 = S_IRUGO - флаг дозволу на читання параметра
+// 0444 - флаг дозволу на читання параметра
 module_param(parameter, uint, 0444);
 MODULE_PARM_DESC(parameter, "My description");
 
@@ -20,7 +20,7 @@ struct myStruct {
     ktime_t myTime;
 };
 
-// статична зміна голови списку
+
 static LIST_HEAD(myList);
 int counter;
 
